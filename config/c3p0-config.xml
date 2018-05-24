@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+	<default-config>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxStatements">10</property>
+		<property name="maxPoolSize">10</property>
+		<property name="minPoolSize">5</property><!-- jdbc:oracle:thin:@192.168.1.116:1521:gdqxt -->
+		<property name="jdbcUrl">
+			jdbc:oracle:thin:@221.179.180.148:1521:gdqxt
+		</property>
+		<property name="driverClass">
+			oracle.jdbc.driver.OracleDriver
+		</property>
+		<property name="user">abc_re</property>
+		<property name="password">dbms_lock</property>
+		<property name="idleConnectionTestPeriod">3600</property>
+		<property name="maxIdleTime">600</property>
+		<property name="numHelperThreads">5</property>
+		<property name="acquireRetryAttempts">2</property>
+		<property name="acquireRetryDelay">10</property>
+		<property name="breakAfterAcquireFailure">false</property>
+	</default-config>
+</c3p0-config>

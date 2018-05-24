@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<common>
+			<read_thread_count>3</read_thread_count>
+			<read_from_redis_limit>500</read_from_redis_limit>
+			<analyseThread>5</analyseThread>
+			<analyse_limt>50</analyse_limt>
+            <sleep_time>1000</sleep_time>
+            <key>wml:20160929:test</key>
+            <analyseEcodeService_key>wml:20161101:test:json</analyseEcodeService_key>
+            <error_key>wml:20161103:error</error_key>
+            <analyseErrorLog_key>wml:20161103:error:json</analyseErrorLog_key>
+            <packageList>guodu.net.analyseService</packageList><!-- ,guodu.net.analyseError -->
+	</common>
+	
+	<jesis>
+			<redis_max_active>100</redis_max_active>
+        	<redis_max_idle>50</redis_max_idle>
+        	<redis_max_wait>1000</redis_max_wait>
+	        <redis_ip>127.0.0.1</redis_ip>
+        	<redis_port>6379</redis_port>
+        	<redis_read_time_out>100000</redis_read_time_out>
+        	<exception_sleep_time>30000</exception_sleep_time>
+	</jesis>
+	
+	<switch>
+			<button>true</button>
+	</switch>
+    
+</config>
